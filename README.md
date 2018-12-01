@@ -37,7 +37,7 @@ In the fancy machine learning version, we don't see m or b. Instead, we see what
 
 In theory, we could guess and input any m or b value into our hypothesis function and get an answer y but we need a way to see how good or bad our guess is. We can find this out using a cost function. In linear regression, we use the "Mean squared error" function.
 
-![alt text](https://www.dropbox.com/s/flraujue6t3qe6r/mean%20squared%20error%20function.png?dl=1 "mean squared error function")
+![alt text](https://www.dropbox.com/s/flraujue6t3qe6r/mean%20squared%20error%20function.png?raw=1 "mean squared error function")
 
 To break this down into (reasonably) simple English, using our training data, we sum up every guess using x and our weights (y = mx + b), we compare it to the actual value (y) squared, and then divide the result by 2 times the number of training examples (1 / 2 * m). Phew.
 
@@ -49,15 +49,15 @@ So we know now that we want to get the value of our cost function as low as poss
 
 Gradient descent is one of the most used alogorithm in machine learning and it is an important concept to understand.
 
-![alt text](https://www.dropbox.com/s/bf1vfapy6ra4hgv/gradient%20descent%20graph.png?dl=1 "gradient descent graph")
+![alt text](https://www.dropbox.com/s/bf1vfapy6ra4hgv/gradient%20descent%20graph.png?raw=1 "gradient descent graph")
 
 What the graph is showing is the error values given different values of one of our parameters (say theta 0). The job of gradient descent is to work out the direction and amount we need to change the parameter in order to get it to the minimum error value (global cost minimum). To do this, gradient descent uses this algorithm:
 
-![alt text](https://www.dropbox.com/s/0elysnmrut0ldc6/gradient%20descent.png?dl=1 "gradient descent algorithm")
+![alt text](https://www.dropbox.com/s/0elysnmrut0ldc6/gradient%20descent.png?raw=1 "gradient descent algorithm")
 
 What this is saying is given an original theta value, we calculate a new one by taking the old value and minus a value calculated using a learning rate * gradient. We do this for each theta value *simultaneously*. Now this part I find very hard to understand (given my lack of calculus experience), but we calculate the gradient using this formula:
 
-![alt text](https://www.dropbox.com/s/9vcwzdwfisqig09/linear_regression_gradient.png?dl=1 "linear regression gradient algorithm")
+![alt text](https://www.dropbox.com/s/9vcwzdwfisqig09/linear_regression_gradient.png?raw=1 "linear regression gradient algorithm")
 
 At first this all seems very complicated but is quite intuitive to imagine. If we are standing on top of a hill and we want to get to the lowest point we would take a step towards the lowest point. To do that we would have to work out the direction of travel and if we should take a big step or a smaller step. Gradient descent does this for us.
 
@@ -65,7 +65,7 @@ At first this all seems very complicated but is quite intuitive to imagine. If w
 
 Gradient descent is done iteratively using small steps. We nudge the theta values in the right direction until we reach convergence (the global minimum). It is important we don't take too large steps otherwise we might overshoot the global minimum:
 
-![alt text](https://www.dropbox.com/s/252wdvpf36e710e/learning%20rate%20examples.png?dl=1 "learning rate")
+![alt text](https://www.dropbox.com/s/252wdvpf36e710e/learning%20rate%20examples.png?raw=1 "learning rate")
 
 Conversely, we shouldn't set it too small otherwise it would take far too many iterations to reach our ideal values.
 
@@ -83,7 +83,7 @@ For the sake of this exercise I decided to use only 500 rows from the original d
 
 First I decided to see the data visualized and how my line would fit given theta 0 and theta 1 values of [1, 1].
 
-![alt text](https://www.dropbox.com/s/m8a6z82xjrfx18o/starting%20values.png?dl=1 "data visualized")
+![alt text](https://www.dropbox.com/s/m8a6z82xjrfx18o/starting%20values.png?raw=1 "data visualized")
 
 As we can see, the line could fit much better. Let's run our gradient descent algorithm over the data set.
 
@@ -156,7 +156,7 @@ num_iterations = 1000
 
 Running gradient descent on our dataset resulted in the following number of iterations:
 
-![alt text](https://www.dropbox.com/s/sry1runh91crqwo/change%20in%20theta%20values.png?dl=1 "Learning rate")
+![alt text](https://www.dropbox.com/s/sry1runh91crqwo/change%20in%20theta%20values.png?raw=1 "Learning rate")
 
 As we can see from the graph, gradient descent took larger steps initially and then made smaller ones until it converged at around 60 iterations.
 
@@ -170,7 +170,7 @@ Running our algorithm we get the following values:
 
 The end result show on the graph:
 
-![alt text](https://www.dropbox.com/s/vbtzh9g92mv5bw7/optimal%20theta%20values.png?dl=1 "end result")
+![alt text](https://www.dropbox.com/s/vbtzh9g92mv5bw7/optimal%20theta%20values.png?raw=1 "end result")
 
 ### Usage
 
