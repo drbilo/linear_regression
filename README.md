@@ -15,7 +15,7 @@ This is the first algorithm featured in the course. I will try to break down the
 
 Say the price of a house is related to the size of the house. Small houses are cheap, medium size houses are a bit more expensive and large houses are the most expensive. We can say there is a *linear* relationship between the size of a house and the price of a house.
 
-![alt text](https://www.dropbox.com/s/n9f5yr56jw96363/price%20of%20house%20example.png?dl=1 "Price of houses example")
+![alt text](https://www.dropbox.com/s/n9f5yr56jw96363/price%20of%20house%20example.png?raw=1 "Price of houses example")
 
 Say we are an estate agent and we want to know the price of a house and we only know the square footage of the house. This would be fine if we have an exact data point but what if we don't have a data point to work with? Wouldn't it be great if we could *guess* the value given any square foot value? Enter linear regression.
 
@@ -27,7 +27,7 @@ So how can we guess a value of our house (y) if we only know the size of it (x)?
 
 or in fancy machine learning algebra:
 
-![alt text](https://www.dropbox.com/s/o8pdg32oybtc84x/hypothesis%20function.png?dl=1 "hypothesis function")
+![alt text](https://www.dropbox.com/s/o8pdg32oybtc84x/hypothesis%20function.png?raw=1 "hypothesis function")
 
 If you don't know anything about algebra, this is a formula to draw a straight line on a graph. To break it down: m is the slope or gradient of the line, b is the y intercept when x = 0 and x is the value we know (size of the house). So given any x value, if we can find the ideal values of m and b, we can find y (price of the house). Hooray!
 
@@ -180,6 +180,8 @@ The end result show on the graph:
 
 The following links have been invaluable:
 
-[How to Do Linear Regression using Gradient Descent](https://www.youtube.com/watch?v=XdM6ER7zTLk)
-[An Introduction to Gradient Descent and Linear Regression](https://spin.atomicobject.com/2014/06/24/gradient-descent-linear-regression/)
-[Coursera Machine Learning](https://www.coursera.org/learn/machine-learning/)
+* [How to Do Linear Regression using Gradient Descent](https://www.youtube.com/watch?v=XdM6ER7zTLk)
+
+* [An Introduction to Gradient Descent and Linear Regression](https://spin.atomicobject.com/2014/06/24/gradient-descent-linear-regression/)
+
+* [Coursera Machine Learning](https://www.coursera.org/learn/machine-learning/)
